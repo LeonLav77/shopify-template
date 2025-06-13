@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "9d353514e5e87dc8c16c646628512adc"
-application_url = "https://circular-tracking-test11.vercel.app/"
+application_url = "https://circular-tracking-test12.vercel.app/"
 embedded = true
 name = "Test12"
 handle = "test12-59"
