@@ -1,10 +1,10 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-client_id = "570dd80ead4538bbe2262e8eaf693274"
-application_url = "https://shopify-vercel-app-chi.vercel.app/"
+client_id = "9d353514e5e87dc8c16c646628512adc"
+application_url = "https://circular-tracking-test11.vercel.app/"
 embedded = true
-name = "example-app-v2"
-handle = "example-app-v2"
+name = "Test12"
+handle = "test12-59"
 
 [webhooks]
 api_version = "2025-01"
@@ -17,17 +17,21 @@ api_version = "2025-01"
   topics = [ "app/scopes_update" ]
   uri = "/webhooks/app/scopes_update"
 
+  [[webhooks.subscriptions]]
+  topics = [ "orders/create" ]
+  uri = "https://c42b-93-140-177-43.ngrok-free.app/order-webhook"
+
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products, read_orders, write_orders"
+scopes = "read_cart_transforms,read_customers,read_discounts,read_draft_orders,read_fulfillments,read_orders,read_price_rules,read_products,read_script_tags,read_themes,unauthenticated_read_metaobjects,write_customers,write_discounts,write_draft_orders,write_fulfillments,write_orders,write_price_rules,write_products,write_script_tags,write_themes"
 
 [auth]
-redirect_urls = [ "https://shopify-vercel-app-chi.vercel.app/api/auth" ]
+redirect_urls = [ "https://circular-tracking-test12.vercel.app/api/auth" ]
 
 [pos]
 embedded = false
 
 [build]
 include_config_on_deploy = true
-dev_store_url = "pruebas-aplicaciones-bm.myshopify.com"
+dev_store_url = "test1-store-test1.myshopify.com"
 automatically_update_urls_on_dev = false
